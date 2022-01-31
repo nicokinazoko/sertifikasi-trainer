@@ -21,12 +21,12 @@
         }
 
         .cards {
-            border-radius: 40px;
+            border-radius: 30px;
         }
 
         ion-icon {
             text-decoration: none;
-            text-indent: 4  0px;
+            text-indent: 4 0px;
         }
 
     </style>
