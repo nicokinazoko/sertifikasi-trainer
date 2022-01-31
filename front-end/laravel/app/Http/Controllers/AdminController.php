@@ -11,8 +11,8 @@ class AdminController extends Controller
         $storage_path = storage_path();
         $data = json_decode(file_get_contents($storage_path . "/data.json"), true);
         $jumlahData = count($data);
-        echo $data[0]['product_name'];
-        dump($data);
+        // echo $data[0]['product_name'];
+        // dump($data);
         return view('home', ['dataBarang' => $data, 'jumlahData' => $jumlahData]);
     }
 }
