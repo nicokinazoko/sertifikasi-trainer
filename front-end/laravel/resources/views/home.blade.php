@@ -1,12 +1,14 @@
 @extends('master.master')
 
 @section('content')
+    <br>
+    <br>
     <div class="row row-cols-1 row-cols-md-3 g-4">
         @foreach ($dataBarang as $index => $barang)
             @if ($index % 2 != 0)
                 <div class="col">
                     <div class="box card h-100 ">
-                        <img src="{{ $barang['cover'] }}" class="card-img-top" alt="...">
+                        <img src="{{ $barang['cover'] }}" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">{{ $barang['product_name'] }}</h5>
                             <p class="card-text">{{ $barang['description'] }}</p>
@@ -30,7 +32,7 @@
             @else
                 <div class="col">
                     <div class="box card h-100">
-                        <img src="{{ $barang['cover'] }}" class="card-img-top" alt="...">
+                        <img src="{{ $barang['cover'] }}" class="card-img-top">
                         <div class="card-body">
                             <h5 class="card-title">{{ $barang['product_name'] }}</h5>
                             <p class="card-text">{{ $barang['description'] }}</p>
